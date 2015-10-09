@@ -1,3 +1,5 @@
+Check if the git master branch or a stable earlier version is recommended.
+
 On Linux:
 $ autoreconf -fi
 $ ./configure --disable-flarq
@@ -5,6 +7,9 @@ $ make
 $ src/dl-fldigi --hab
 
 For ubuntu more information can be found: http://ukhas.org.uk/projects:dl-fldigi:build-ubuntu
+At the time of writing, needed dependencies include the following packages, along with the
+usual build-essentials: 
+libfltk1.3-dev libcurl-dev git-core libcurl4-openssl-dev libjpeg8-dev autoconf libxmlrpc-c++8-dev
 
 On OS X:
 $ ln -s /opt/local/share/aclocal/pkg.m4 ~/dl-fldigi/m4/
